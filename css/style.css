@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Jost:wght@600&family=Neucha&family=Pacifico&family=Playpen+Sans:wght@300&family=Raleway:wght@500&family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Trebuchet MS';
+}
+
+h1{
+    color: #111;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #fff;  
+}
+
+h2{    
+    color: #4a2626;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #fff; 
+    letter-spacing: 0.5rem;
+    border-top: 5px solid #fc7473;
+}
+
+header{
+    display: flex;
+    background-color: #4a2626;
+    width: 100%;    
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav-container{
+    display: flex;
+    height: 4rem;
+    align-items: center;    
+}
+
+.logo{
+    height: 3rem;
+    width: auto;
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.nav-items ul{
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+
+.nav-items a{
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none; 
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #111;  
+    white-space: nowrap;
+}
+
+.nav-items a:hover{
+    color: #fcecdc;
+    font-size: 1.05rem;
+    transition: 1s;
+    
+}
+
+.choco{   
+    display: flex;
+    height: 5rem;
+    top: 3.8rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.choco-resp{
+    display: none;
+    height: 5rem;
+    top: 3.8rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.slide-container{
+    display: flex;    
+    background-color: #fc7473;
+    height: 38rem;
+    align-items: end;
+    padding-left: 5rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    gap: 5rem;
+}
+
+.slide{
+    height: 25rem;
+    padding-top: 1rem;
+}
+
+.slide p{
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: justify;
+    font-family: 'Satisfy', cursive;
+}
+
+#slogan{
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.slide-container img{    
+    height: 26rem;
+    width: auto;
+}
+
+.whats img{
+    position: fixed;
+    z-index: 1;
+    height: 5rem;
+    width: auto;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.cakes-container{
+    padding: 9rem 2rem 2rem 2rem;
+    background-color: #fcecdc;
+    height:84rem;    
+}
+
+.cake-andar{
+    display: flex;
+    text-align: center;
+    gap: 1rem;
+}
+
+.icon{
+    height: 4rem;
+    width: auto;
+}
+
+.cake-andar ul{
+    padding: 1rem;
+    background-color: #fff;
+    border-top: 5px solid #4a2626;
+    border-bottom: 5px solid #4a2626;
+    border-left: 2px solid #4a2626;
+    border-right: 2px solid #4a2626;
+    border-radius: 1rem;
+    list-style: none;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cake-andar li{
+    font-size: 1.2rem;
+}
+
+.cake-andar ul a{
+    background-color: #4a2626;
+    padding: 0.5rem 2rem;    
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.cake-andar ul a:hover{
+    background-color: #fc7473;
+    color: #111;
+    transition: 1s;
+}
+
+.carrossel{
+    overflow: hidden;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 1rem;
+    margin: 1rem auto;
+    border: 4px solid #4a2626;    
+    margin-bottom: 2rem;
+}
+
+.container-carrossel{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.container-carrossel img{
+    object-fit: cover;
+    height: 12rem;
+    width: 12rem;
+}
+
+.entrega-container{
+    padding: 9rem 2rem 2rem 2rem;
+    background-color: #fcecdc;
+    height: 38rem;
+    text-align: center;
+}
+
+.entrega-container p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+button{
+    background-color: #4a2626;
+    padding: 0.5rem;    
+    width: 15rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+button:hover{
+    background-color: #fc7473;
+    color: #111;
+    transition: 1s;
+}
+
+.ent-img{
+    height: 12rem;
+    width: auto;
+    display: block;
+    margin: 0 auto 2rem auto;   
+}
+
+.social-news{
+    padding: 9rem 2rem 2rem 2rem;
+    background-color: #fcecdc;
+    height: 38rem;
+    text-align: center;
+}
+
+.social{
+    gap: 2rem;
+    display: flex;
+}
+
+.social a{
+    padding-top: 2rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #111;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+.social-img{
+    height: 1.5rem;
+    width: auto;
+}
+
+.news{
+    margin-top: 4rem;
+}
+
+.news-1{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.news-1 input{
+    padding: 0.5rem;
+    width: 20rem;
+    
+}
+
+footer{
+    text-align: center;
+    font-size: 1rem;
+    color: #111;
+    margin: 0.5rem 0;
+}
+
+#email{
+    width: 40rem;
+}
+
+#content{
+    display: none;
+}
+
+#loading{
+    position: absolute;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fcecdc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.load-logo{
+    height: 20rem;
+    width: auto;
+}
+
+.load-bar{
+    margin-top: 1rem;
+    height: 2rem;
+    width: auto;
+}
+
+/*FORMULÁRIO*/
+
+h3{
+    color: #4a2626;
+    border-radius: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #fff; 
+}
+
+.container-form{  
+    background-color: #fcecdc;
+    height: 73rem;
+    padding: 9rem 2rem 2rem 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;   
+    text-align: center;
+    align-items: center;
+}
+
+form input{
+    border-radius: 1rem;
+    border: none;
+    background-color: #fff;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #111;
+}
+
+.cake-container{
+    width: 50rem;
+    padding-top: 2rem;
+}
+
+.name{
+    width: 40rem;
+}
+
+.number{
+    width: 10rem;
+}
+
+.email{
+    width: 25rem;
+}
+
+#recheio{
+    width: 16rem;
+    padding: 5px;
+}
+
+.size-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+   
+}
+
+.andar-container input,
+.andar-container label{
+    display: inline-block;
+}
+
+#andar{
+    width: 5rem;
+    padding: 5px;
+}
+
+.sug{
+    width: 30rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sug-img{
+    width: 20rem;
+}
+
+.data{
+    width: 10rem;
+}
+
+.hora{
+    width: 10rem;
+}
+
+.endereco{
+    display: inline;
+    width: 25rem;
+}
+
+.n{
+    width: 5rem;
+}
+
+.cep{
+    width: 10rem;
+}
+
+textarea{
+    width: 45rem;
+    height: 10rem;
+    border-radius: 1rem;
+}
+
+::placeholder{
+    padding: 10px;
+}
+
+/*Responsividade*/
+
+.sandbar-container{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.5rem;  
+    margin-top: 0.5rem;  
+    align-items: center;
+}
+.sandbar{    
+    height: 2.5rem;
+    width: auto;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width:768px){
+    header{
+        background-color: #4a2626;
+        z-index: 2;
+    }
+    .choco{
+        display: none;
+    }
+    .choco-resp{
+        display: block;
+        z-index: 2;
+    }
+    .slide-container{
+        padding-left: 2rem;
+        padding-right: 2rem;      
+        gap: 2rem;
+        align-items: center;
+    }
+    h1{
+        padding: 0;
+        font-size: 2rem;        
+    }
+    .slide p{
+        font-size: 1.1rem;
+        font-weight: none;
+    }    
+    #slogan{
+        font-size: 1.5rem;
+    }    
+    .slide-container img{    
+        height: 25rem;
+        width: auto;
+        padding-top: 6rem;
+    }
+    .slide{
+        padding-top: 4rem;
+    }
+    .cake-andar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .cakes-container{
+        height: 150rem;
+    }
+    .entrega-container{
+        height: 45rem;
+    }
+    .social-news{
+        height: 45rem;
+    }        
+    .social{
+        gap: 1rem;
+    }
+    .social a{
+        font-size: 1rem;
+    } 
+    .sandbar{   
+        display: block;
+    }
+    .nav-items{
+        position: absolute;
+        display: none;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: rgba(225, 91, 91, 0.5);
+        transition: 1s ease;
+        text-align: center;
+        padding-top: 3rem;
+    }
+    .nav-items.active{
+        display: block;
+    }
+    .nav-items ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        align-items: center;
+        gap: 1rem;
+    }
+    .name{
+        width: 30rem;
+    }
+    .email{
+        width: 15rem;
+    }
+    #recheio{
+        width: 5rem;
+    }
+    .row{
+        display: block;
+    }
+    .endereco{
+        width: 15rem;
+    }
+    .cep{
+        width: 7rem;
+    }
+    textarea{
+        width: 30rem;
+    }
+}
+
+
+@media (max-width:390px){
+    .slide-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    h1{
+        font-size: 1.5rem;        
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .slide p{
+        font-size: 0.9rem;
+    }    
+    #slogan{
+        font-size: 1rem;
+    }    
+    .slide-container{
+        height: 50rem;
+    }
+    .slide-container img{
+        height: 27rem;            
+        order: 1;
+        padding-top: 7rem;
+    }
+    .slide{
+        padding-top: 0;
+        order: 2;
+    }
+    .cake-andar{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .cakes-container{
+        height: 267rem;
+        padding-top: 7rem;
+    }
+    .entrega-container{
+        height: 35rem;
+        padding-top: 7rem;
+    }
+    .entrega-container p{
+        font-size: 1.5rem;
+    }
+    .social-news{
+        height: 52rem;
+        padding-top: 7rem;
+    }        
+    .social{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .social a{
+        font-size: 1rem;
+        padding: 0.5rem 0;
+    } 
+    .news{
+        padding-top: 5rem;
+    }
+    .nav-items{
+       padding-top: 1rem;
+    }     
+    .name{
+        width: 19rem;
+    }
+    .number{
+        width: 7rem;
+    }
+    .email{
+        width: 7rem;
+    }
+    .size-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .sug{
+        width: 15rem;
+    }    
+    .sug-img{
+        width: 10rem;
+    }    
+    .data{
+        width: 7rem;
+    }    
+    .hora{
+        width: 7rem;
+    }    
+    .endereco{
+        width: 10rem;
+    }    
+    .n{
+        width: 3rem;
+    }    
+    .cep{
+        width: 5rem;
+    }    
+    textarea{
+        width: 19rem;
+        height: 5rem;
+    }
+    .container-form{
+        height: 80rem;
+    }    
+}
+
+
+
+
+
+
+
+
+
